@@ -1,0 +1,35 @@
+{
+  "name": "ui-vue",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "vite build && vue-tsc --project ./tsconfig.build.json"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/typings/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/typings/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.5",
+  "dependencies": {
+    "vue": "3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.2.3",
+    "typescript": "5.8.2",
+    "vite": "6.2.3",
+    "vue-tsc": "2.2.8"
+  }
+}
