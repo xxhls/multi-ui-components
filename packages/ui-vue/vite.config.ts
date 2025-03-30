@@ -26,6 +26,10 @@ export default defineConfig({
     outDir: 'dist',
   },
   resolve: {
+    alias: {
+      "types": resolve(__dirname, './_types'),
+      "utils": resolve(__dirname, './_utils'),
+    },
     dedupe: ['vue'],
   },
   optimizeDeps: {

@@ -9,9 +9,8 @@
     "strictNullChecks": false,
     "baseUrl": "./",
     "paths": {
-      "@@/*": [".dumi/tmp/*"],
-      "uni-starter-vue": ["src"],
-      "uni-starter-vue/*": ["src/*", "*"]
+      "types/*": ["./_types/*"],
+      "utils/*": ["./_utils/*"],
     }
   },
   "include": ["components/**/*.ts", "components/**/*.tsx", "components/**/*.vue"],
